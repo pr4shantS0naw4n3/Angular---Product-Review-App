@@ -1,0 +1,31 @@
+<main *ngIf="!found">
+  <div class="srch_wrpr">
+    <input type="checkbox" name="" class="checkbox">
+    <div class="srch_sb_cnt">
+      <input type="text" name="text_bar" id="" class="sech_txt_inpt" placeholder="Type to search..."
+        [(ngModel)]="searchText">
+      <button class="srch_btn" (click)="search()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <span *ngIf="notFound" style="padding-left: 22%;color: #FF797C;">No Data Found with this keyword.!</span>
+</main>
+
+<div *ngIf="found">
+  <section class="rating__card" *ngFor="let review of data">
+    <div class="rating__card__stars">
+      <span [class]="review.score>0?'fa fa-star checked':'fa fa-star'"></span>
+      <span [class]="review.score>1?'fa fa-star checked':'fa fa-star'"></span>
+      <span [class]="review.score>2?'fa fa-star checked':'fa fa-star'"></span>
+      <span [class]="review.score>3?'fa fa-star checked':'fa fa-star'"></span>
+      <span [class]="review.score>4?'fa fa-star checked':'fa fa-star'"></span>
+      <span class="rating__card__stars__name"></span><br>
+      <span><b>{{review.profileName}}</b></span>
+    </div>
+    <p class="rating__card__bottomText">{{review.summary}}</p>
+    <p class="rating__card__bottomText">{{review.helpfulness}} people found this helpfull</p>
+    <blockquote class="rating__card__quote">{{review.text}}</blockquote>
+    <br><br>
+  </section>
+</div>
