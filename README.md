@@ -1,4 +1,4 @@
-# Prodyct Review Search Application - FRONTEND 
+# Product Review Search Application - FRONTEND 
 
 # ANGULAR
 
