@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url: 'http://localhost:8000/api/'
+  apiLocal: 'http://localhost:8000/api/',
+  apiServer: 'https://product-review-search.herokuapp.com/api/'
 };
 
 /*
