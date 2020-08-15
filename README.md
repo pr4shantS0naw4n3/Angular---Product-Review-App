@@ -1,27 +1,67 @@
-# ProductReviewSearchFrontend
+# Prodyct Review Search Application - FRONTEND 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+# ANGULAR
 
-## Development server
+Frontend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# How to Run
 
-## Code scaffolding
+## Requirements for Frontend
+- Node
+- IDE(Visual Studio Code)
+- GIT
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
+First Install the base programs to run the application
+- [Node](https://nodejs.org/en/download/)
+- [Visual Studio Code](https://code.visualstudio.com/Download)
+- [GIT](https://git-scm.com/downloads)
 
-## Build
+After all the basic installation is done
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Steps to Run the Application
 
-## Running unit tests
+**Step 1**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Create an empty folder
+In that folder do ```right_click -> gitbash```
+A terminal window will open, In that window run the following command
 
-## Running end-to-end tests
+```
+git clone https://github.com/pr4shantS0naw4n3/productReviewSearchApplication-FrontEnd.git
+```
+This will clone the repository on your local environment
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+**Step 2**
 
-## Further help
+Open **Visual Studio Code**
+Now Open the cloned Folder inside the **Visual Studio Code**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Now open terminal (Can Use Shortcut: ctrl + ~ )
+
+Inside the terminal run the following command
+```
+npm install
+```
+This will install all the packages and dependencies required to run the application(may take a few minutes)
+After the installation is done
+
+**Step 3**
+Inside the terminal run the following command
+```
+ng serve
+```
+or
+```
+npm start
+```
+
+This will serve your angular application via angular CLI and your web application will be up and running on
+**localhost:4200**
+
+### ***Please make sure your back end server is up and running while performing any sort of functions on the web application***
+### IF YOU HAVE NOT INSTALLED AND RUN THE BACKEND SETUP
+
+### CLICK ON THE LINK BELOW TO GOTO THE BACKEND SETUP README
+[BACKEND SETUP](https://github.com/pr4shantS0naw4n3/productReviewSearchApplication-BackEnd)
+
