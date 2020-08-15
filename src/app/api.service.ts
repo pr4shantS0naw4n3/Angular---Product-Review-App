@@ -17,6 +17,6 @@ export class ApiService {
   ) { }
 
   search(data) {
-    return this.http.post(environment.apiLocal + 'searchReview', JSON.stringify(data), httpOptions)
+    return this.http.post(environment.apiServer + 'searchReview', JSON.stringify(data), httpOptions)
   }
 }
